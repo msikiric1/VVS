@@ -38,12 +38,13 @@ namespace VVSProjekat
             catch (Exception err)
             {
                 // Korisnik je vec prijavljen
-                IWebElement logoutLink = driver.FindElement(By.Id("logout2"));
-                logoutLink.Click();
-
-                IWebElement logIn = driver.FindElement(By.Id("login2"));
-                Assert.IsNotNull(logIn);
             }
+
+            IWebElement logoutLink = driver.FindElement(By.Id("logout2"));
+            logoutLink.Click();
+
+            IWebElement logIn = driver.FindElement(By.Id("login2"));
+            Assert.IsNotNull(logIn);
         }
 
         [Test]
